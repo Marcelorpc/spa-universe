@@ -12,6 +12,13 @@ export class Router {
     window.history.pushState({}, "", event.target.href)
 
     this.handle()
+
+    const links = document.querySelectorAll(".routelink")
+    links.forEach(link => {
+      link.classList.remove("active")
+    })
+
+    event.target.classList.add("active")
   }
 
   handle() {
