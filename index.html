@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/logo.svg">
   <script src="src/index.js" type="module" defer></script>
   <title>SPA Universe</title>
 </head>
+
 <body>
   <header>
     <div>
       <img src="./assets/logo.svg" alt="logo da spa universe" />
 
       <nav>
-        <a href="/" onclick="Route()">Home</a>
-        <a href="/o-universo" onclick="Route()">O universo</a>
-        <a href="/exploracao" onclick="Route()">Exploração</a>
+        <a href="/" onclick="Route()" class="routelink">Home</a>
+        <a href="/o-universo" onclick="Route()" class="routelink">O universo</a>
+        <a href="/exploracao" onclick="Route()" class="routelink">Exploração</a>
       </nav>
     </div>
   </header>
@@ -25,4 +30,5 @@
 
   </nav>
 </body>
+
 </html>
